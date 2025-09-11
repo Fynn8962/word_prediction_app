@@ -1,84 +1,88 @@
-import React from "react";
-import { Text, View, StyleSheet} from "react-native";
+import React, { useEffect, useState } from "react";
+import { Text, View, StyleSheet, ActivityIndicator} from "react-native";
 import { FlatList, TextInput } from "react-native-gesture-handler";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { predictNextWords } from "../../utils/wordPrediction";
+
+
+
 
 export default function Index() {
 
-    const [isLoading, setLoading] = React.useState(false);
-    const [data, setData] = React.useState([]);
-    const [error, setError] = React.useState(null);
-    const [fullData, setFullData] = React.useState([]);
-    const [text, onChangeText] = React.useState('');
+  const [searchQuery, setSearchQuery] = useState("");
+  const [predictions, setPredictions] = useState<String[]>([]);
 
-    // Functional component to render each item in the FlatList
-    
 
-    const DATA = [
-      { id: "1", title: "Data Structures" },
-      { id: "2", title: "STL" },
-      { id: "3", title: "C++" },
-      { id: "4", title: "Java" },
-      { id: "5", title: "Python" },
-      { id: "6", title: "CP" },
-      { id: "7", title: "ReactJs" },
-      { id: "8", title: "NodeJs" },
-      { id: "9", title: "MongoDb" },
-      { id: "10", title: "ExpressJs" },
-      { id: "11", title: "PHP" },
-      { id: "12", title: "MySql" },
-    ];
 
-    const Item = ({ title }) => (
-      <View style={styles.item}>
-        <Text style={styles.itemText}>{title}</Text> 
-      </View>
-    );
+
+  const handleChange = (input: string) => {
+    setSearchQuery(input);
+    const nextWords = predictNextWords(input, 5);
+     setPredictions(nextWords);
+  }
+
 
 
   return (
-    <View style={styles.container}>
-      <TextInput
-        style={styles.searchBox}
-        onChangeText={onChangeText}
-        value={text}
-        placeholder="Type a word..."
-        clearButtonMode="always"
-        autoCapitalize="none"
+    <SafeAreaView style={styles.container}>
+      <View style={styles.searchContainer}>
+        <TextInput
+        style={styles.searchBar}
+          placeholder="Type a word..."
+          placeholderTextColor="#888"
+          clearButtonMode="always"
+          autoCapitalize="none"
+          autoCorrect={false}
+          value={searchQuery}
+          onChangeText={handleChange}
+        />
+      </View>
+      <FlatList 
+        data={predictions}
+        keyExtractor={(item, index) => index.toString()}
+        renderItem={({ item }) => (
+        <View style={styles.itemContainer}>
+        <Text style={styles.textWord}>{item}</Text>
+        </View>
+      )}
+      
       />
-      <FlatList data={DATA} renderItem={({ item }) => <Item title={item.title} />}
-      />
-    </View>
+    </SafeAreaView>
   );
 }
+
+
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#25292e',
-    justifyContent: "center"
-
+    
   },
-  text: {
-    color: '#fff',
+  searchContainer: {
+    position: 'relative',
+    zIndex: 1,
   },
-  searchBox: {
-    height: 40,
-    margin: 12,
+  searchBar: {
     borderWidth: 1,
-    padding: 10,
-    borderColor: '#fff',
+    marginHorizontal: 20,
+    padding: 8,
+    borderRadius: 8,
     color: '#fff',
-    borderRadius: 8,
+    borderColor: '#ccc'
   },
-  item: {
-    backgroundColor: "red", // Background color for each item
-    padding: 20, // Padding inside each item
-    marginVertical: 8, // Vertical margin between items
-    marginHorizontal: 16, // Horizontal margin between items
-    borderRadius: 8,
+  itemContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginLeft: 10,
+    marginTop: 10,
   },
-  itemText: {
-    color: "white", // Text color
-    fontSize: 18, // Font size for the text
+  textWord: {
+    color: '#fff',
+    fontSize: 17,
+    marginLeft: 10,
+    fontWeight: "600",
   },
 });
+
+
