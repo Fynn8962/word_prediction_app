@@ -1,11 +1,11 @@
 // word_prediction_app/utils/wordPrediction.ts
-import sentences from "../data/unique_sentences.json"; // JSON: ["Satz 1", "Satz 2", ...]
+import sentences from "../data/all_sentences.json"; 
 
 function preprocess(text: string): string[] {
   text = text.toLowerCase();
   text = text
     .split("")
-    .filter((char) => /[a-z0-9. ]/.test(char))
+    .filter((char) => /[a-züäöß0-9. ]/.test(char))
     .join("");
   text = text.replace(/\./g, " . ");
   return text

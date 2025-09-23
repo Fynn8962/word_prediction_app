@@ -4,24 +4,16 @@ import { FlatList, TextInput } from "react-native-gesture-handler";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { predictNextWords } from "../../utils/wordPrediction";
 
-
-
-
 export default function Index() {
 
   const [searchQuery, setSearchQuery] = useState("");
   const [predictions, setPredictions] = useState<String[]>([]);
-
-
-
 
   const handleChange = (input: string) => {
     setSearchQuery(input);
     const nextWords = predictNextWords(input, 5);
      setPredictions(nextWords);
   }
-
-
 
   return (
     <SafeAreaView style={styles.container}>
