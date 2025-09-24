@@ -1,4 +1,4 @@
-# Word Prediction App
+y# Word Prediction App
 
 **Beschreibung:**  
 Eine mobile App, die Wörter  vervollständigt und so das Tippen schneller und effizienter macht. 
