@@ -28,12 +28,18 @@ Die Funktion der WordPrediction wird mithilfe eines Files ([wordPrediction.ts](h
 
 Zusätzlich hat die App eine intergrierte Google welche den Suchbegriff automatisch an die Google übergibt und im Browser öffnet. Beim ersten mal erscheint ein Hinweisdialog, welcher denn Nutzer über die Suche informiert.
 
+ &nbsp;
 
+**Applikation Homescreen**
 <img src="https://github.com/Fynn8962/Lern-Periode-11/blob/main/images/word_prediction_home.jpg" alt="App home-screen" width="300" >
+
+**Applikation Wortvorhersage**
+Nach eingabe von mindestens zwei Wörtert wird dem Benutzer eine Auswahl an passenden Wörtern angezeigt. Diese können ausgewählt und automatisch in der Suchleiste hinzugefügt werden.
 <img src="https://github.com/Fynn8962/Lern-Periode-11/blob/main/images/word_prediction_about.jpg" alt="App about-screen" width="300" >
 <img src="https://github.com/Fynn8962/Lern-Periode-11/blob/main/images/word_prediction_search.jpg" alt="App searching" width="300" >
 <img src="https://github.com/Fynn8962/Lern-Periode-11/blob/main/images/word_prediction_suggestion.jpg" alt="App word suggestion" width="300" >
 <img src="https://github.com/Fynn8962/Lern-Periode-11/blob/main/images/word_prediction_search_google.jpg" alt="App search with Google" width="300" >
+
 
 
 
