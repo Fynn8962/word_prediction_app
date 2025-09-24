@@ -1,7 +1,6 @@
 # Word Prediction App
 
 **Beschreibung:**  
-<div>
 Eine mobile App, die Wörter  vervollständigt und so das Tippen schneller und effizienter macht.
 
 
