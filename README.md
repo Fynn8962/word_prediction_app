@@ -30,7 +30,7 @@ Zusätzlich hat die App eine intergrierte Google welche den Suchbegriff automati
 
  &nbsp;
 
-**Applikation Homescreen**
+**Applikation Homescreen**                        
 <img src="https://github.com/Fynn8962/Lern-Periode-11/blob/main/images/word_prediction_home.jpg" alt="App home-screen" width="300" >                     
 
 **Applikation Wortvorhersage**                 
