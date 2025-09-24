@@ -6,8 +6,9 @@ import {
   TouchableOpacity,
   Linking,
   Alert,
+  FlatList,
+  TextInput,
 } from "react-native";
-import { FlatList, TextInput } from "react-native-gesture-handler";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { predictNextWords } from "../../utils/wordPrediction";
 
@@ -101,6 +102,7 @@ export default function Index() {
     handleGoogleSearch();
   };
 
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.searchContainer}>
@@ -115,6 +117,7 @@ export default function Index() {
           onChangeText={handleChange}
           onSubmitEditing={handleSubmitEditing}
           returnKeyType="search"
+
         />
       </View>
       <FlatList
@@ -142,6 +145,7 @@ const styles = StyleSheet.create({
   searchContainer: {
     position: "relative",
     zIndex: 1,
+    pointerEvents: "auto",
   },
   searchBar: {
     borderWidth: 2,
@@ -165,13 +169,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
     borderRadius: 8,
     backgroundColor: "#2f3437",
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 1,
-    },
-    shadowOpacity: 0.22,
-    shadowRadius: 2.22,
+    boxShadow: "0 1px 2px rgba(0, 0, 0, 0.22)",
     elevation: 3,
   },
   textWord: {
