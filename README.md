@@ -22,6 +22,8 @@ Weitere Details zum Entwicklungsprozess und der App: [Lern-Periode 11](https://g
 
 Die App beschleunigt das Tippen mit Satzvorhersage und Autovervollständigung. Sie schlägt die wahrscheinlichsten Wörter vor und erleichtert so schnelles Schreiben. Texteingaben können direkt in Google gesucht werden.
 
+>Hinweis: Die App wurde ausschließlich in Expo Go entwickelt und getestet, daher ist sie aktuell nur in dieser Umgebung lauffähig.
+
 ### Funktion           
 Die Word-Prediction Applikation wurde mithilfe des React-Nativ framework "Expo" in TypeScript erstellt. Die besteht aus zwei grundlegenden Tabs, diese sind der Homescreen, welcher die Hauptfunktion darstellt und eine About-Section welche eine kleine Erklärung beinhaltet. 
 
