@@ -1,10 +1,12 @@
 # Word Prediction App
 
 **Beschreibung:**  
-Eine mobile App, die Wörter  vervollständigt und so das Tippen schneller und effizienter macht.<p align="right">
+<div>
+Eine mobile App, die Wörter  vervollständigt und so das Tippen schneller und effizienter macht.
+<p align="right">
   <img src="https://github.com/Fynn8962/Lern-Periode-11/blob/main/images/word_prediction_icon.png" alt="App home-screen" width="200">
 </p>
-
+</div>
 ---
 
 ## Projektdaten
