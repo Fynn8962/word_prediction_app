@@ -4,7 +4,7 @@
 Eine mobile App, die Wörter  vervollständigt und so das Tippen schneller und effizienter macht.<img src="https://github.com/Fynn8962/Lern-Periode-11/blob/main/images/word_prediction_icon.png" 
      alt="App home-screen" 
      width="100" 
-     style="margin-left: 20px;">
+     style="padding: 20px;">
                    
 
 
