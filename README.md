@@ -18,4 +18,7 @@ Weitere Details zum Entwicklungsprozess und der App: [Lern-Periode 11](https://g
 ---
 
 ## Projektbeschreib
-...
+
+Diese App beschleunigt das Tippen durch Vorhersage und Vervollständigung von Sätzen.
+Sie nutzt eine Wortvorhersagetechnologie, um die wahrscheinlichsten Wörter vorzuschlagen und so zu helfen, schneller und mit weniger Aufwand zu schreiben. Die Eingabe kann direkt in der Google Suche gesucht werden.
+
