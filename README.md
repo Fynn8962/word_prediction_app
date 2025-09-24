@@ -21,6 +21,10 @@ Weitere Details zum Entwicklungsprozess und der App: [Lern-Periode 11](https://g
 
 Die App beschleunigt das Tippen mit Satzvorhersage und Autovervollständigung. Sie schlägt die wahrscheinlichsten Wörter vor und erleichtert so schnelles Schreiben. Texteingaben können direkt in Google gesucht werden.
 
+### Funktion           
+...
+
+
 <img src="https://github.com/Fynn8962/Lern-Periode-11/blob/main/images/word_prediction_home.jpg" alt="App home-screen" width="300" >
 <img src="https://github.com/Fynn8962/Lern-Periode-11/blob/main/images/word_prediction_about.jpg" alt="App about-screen" width="300" >
 <img src="https://github.com/Fynn8962/Lern-Periode-11/blob/main/images/word_prediction_search.jpg" alt="App searching" width="300" >
