@@ -30,20 +30,28 @@ Zusätzlich hat die App eine intergrierte Google welche den Suchbegriff automati
 
  &nbsp;
 
-**Applikation Homescreen**                                       
+  &nbsp;
+
+
+**Applikation Homescreen:**                                       
 <img src="https://github.com/Fynn8962/Lern-Periode-11/blob/main/images/word_prediction_home.jpg" alt="App home-screen" width="300" >                     
 
-**Applikation Wortvorhersage**                                
+ &nbsp;
+
+**Applikation Wortvorhersage:**                                
 Nach eingabe von mindestens zwei Wörtert wird dem Benutzer eine Auswahl an passenden Wörtern angezeigt. Diese können ausgewählt und automatisch in der Suchleiste hinzugefügt werden.                          
 <img src="https://github.com/Fynn8962/Lern-Periode-11/blob/main/images/word_prediction_search.jpg" alt="App searching" width="300" >
 <img src="https://github.com/Fynn8962/Lern-Periode-11/blob/main/images/word_prediction_suggestion.jpg" alt="App word suggestion" width="300" >
 
-**Applikation Googel-suche**               
+ &nbsp;
+
+**Applikation Googel-suche:**               
 Wird vom Benutzer die Google Suche zugelassen, wird das eingegebene im Browser gegoogelt.                        
 <img src="https://github.com/Fynn8962/Lern-Periode-11/blob/main/images/word_prediction_search_google.jpg" alt="App search with Google" width="300" >
 
+ &nbsp;
 
-**Applikation Informationsscreen**                     
+**Applikation Informationsscreen:**                     
 Zeigt eine kurzen Informationstext über die Funktion des Programmes.           
 <img src="https://github.com/Fynn8962/Lern-Periode-11/blob/main/images/word_prediction_about.jpg" alt="App about-screen" width="300" >
 
